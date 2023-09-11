@@ -1,0 +1,53 @@
+.park {
+    position: relative;
+}
+.leg1 {
+    position: absolute;
+    top: 333px;
+    left: 207px;
+    z-index: 1;
+    transform-origin: top left;
+    transform: rotate(35deg);
+    animation: moving1 3s linear infinite;
+}
+@keyframes moving1 {
+    0% {
+        top: 333px;
+        left: 207px;
+    }
+    50% {
+        top: 345px;
+        left: 195px;
+        transform: rotate(-25deg);
+
+    }
+    100% {
+        top: 333px;
+        left: 207px;
+    }
+}
+.leg {
+    position: absolute;
+    top: 326px;
+    left: 221px;
+    transform-origin: top left;
+    transform: rotate(-25deg);
+    animation: moving 3s linear infinite;
+}
+@keyframes moving {
+    0% {
+        top: 326px;
+        left: 221px;
+    }
+    50% {
+        top: 315px;
+        left: 233px;
+        transform: rotate(35deg);
+
+    }
+    100% {
+        top: 326px;
+        left: 221px;
+    }
+}
+
